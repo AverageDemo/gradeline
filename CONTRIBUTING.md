@@ -3,6 +3,8 @@
 Thanks for your interest! Gradeline is in early development, so please open an issue to discuss a change before you
 put significant work into it.
 
+Everyone participating in this project is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## Ground rules
 
 - **Never commit secrets.** That includes API keys, webhook tokens, push credentials, and `.env` files. Use environment
