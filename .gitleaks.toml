@@ -1,0 +1,13 @@
+# Gitleaks configuration — https://github.com/gitleaks/gitleaks
+# Extends the default ruleset. Add allowlist entries only for verified false positives,
+# and document why next to each one.
+title = "gradeline"
+
+[extend]
+useDefault = true
+
+# BMAD's install manifest lists SHA-256 hashes of installed files. Hashes next to file names
+# such as "key-screens.md" trip the generic-api-key rule. The file is generated and holds no secrets.
+[[allowlists]]
+description = "BMAD installer file-hash manifest"
+paths = ['''^_bmad/_config/files-manifest\.csv$''']
