@@ -1,0 +1,52 @@
+# ── Secrets: never commit. Use .env.example for documented placeholders. ──
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+*.secret
+*.secrets
+secrets/
+credentials*.json
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+.npmrc
+.netrc
+
+# ── Personal / machine-local config ──
+*.user.toml
+.claude/settings.local.json
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Dependencies & build output ──
+node_modules/
+.pnpm-store/
+dist/
+build/
+out/
+.next/
+.turbo/
+.vercel/
+coverage/
+*.tsbuildinfo
+__pycache__/
+.venv/
+
+# ── Logs & local data ──
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+tmp/
